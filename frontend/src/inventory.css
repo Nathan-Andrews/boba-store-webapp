@@ -1,0 +1,258 @@
+
+  .background-container {
+    z-index: -1;
+  }
+  
+  .content-container {
+    display: flex;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-top: 2vh;
+  }
+  
+  .panel {
+    flex: 1;
+    padding-top: 5px;
+    border: solid;
+    min-height: 90vh;
+    max-height: 90vh;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  .panel:first-child{
+    margin-right: 5vh;
+  }
+  .item-object {
+    background-color: white;
+    border: solid;
+    border-color: grey;
+    padding: 8px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .item-top-element:first-child:hover {
+    background-color: lightcyan;
+  }
+  .batch-object {
+    background-color: white;
+    border: solid;
+    border-color: grey;
+    padding: 8px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .batch-top-bar {
+    display:flex;
+    height:50%;
+  }
+  .batch-top-element {
+    flex:1;
+  }
+  .batch-top-element:last-child {
+    text-align: right;
+  }
+  .batch-delete {
+    width: 80%;
+    background-color: lightcoral;
+    color: white;
+    font-weight: bold;
+  }
+  .batch-delete:hover {
+    background-color: red;
+  }
+  .batch-bottom-bar {
+    display:flex;
+    height:50%;
+    padding-top: 5px;
+  }
+  .batch-bottom-element:first-child {
+    flex:1;
+  }
+  .batch-action.button {
+    background-color: rgb(77, 77, 255);
+    color:white;
+  }
+  .batch-action.button:hover {
+    background-color: cyan;
+    color: black;
+  }
+  .batch-bottom-element:last-child {
+    display: flex;
+  }
+  .batch-bottomright-element {
+    flex:1;
+  }
+  .batch-action {
+    flex:1;
+    
+  }
+
+  .item-top-bar {
+    display: flex;
+  }
+  .item-top-element {
+    flex:1;
+    padding-left: 5px;
+  }
+  .item-top-element:first-child{
+    text-align: left;
+    font-weight: bold;
+    width: 40%;
+    flex: 2;
+  }
+
+  .item-top-element:not(:first-child):not(:last-child) {
+    vertical-align: center;
+    padding-top:6px;
+  }
+  .item-top-element:last-child{
+    text-align: right;
+  }
+  .item-bottom-bar {
+    display: flex;
+  }
+  .bottom-bar-container {
+    flex:1;
+  }
+  .half-bottom-bar {
+    display:flex;
+    width: 50%;
+  }
+  .checkbox {
+    flex:1;
+    text-align: left;
+    align-content: center;
+    opacity: 1;
+    vertical-align: middle;
+  }
+  .checker-label {
+    font-weight: bold;
+    vertical-align: middle;
+    align-content: center;
+    padding-left: 5px;
+    margin-top: 4px;
+  }
+
+  input[type=checkbox] {
+    line-height: normal;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    z-index: 5;
+}
+
+
+  .bottom-container {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .back-button {
+    font-size: 16px;
+    background-color: #759ade;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 50px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+  .element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  .element:first-child{
+    margin-left: 28vh;
+  }
+  .element:last-child{
+    margin-right: 28vh;
+  }
+
+  
+  
+.back-button:hover {
+  background-color: #6280b8;
+  color: #ccc;
+}
+
+.text-label {
+  font-size: 16px;
+  color: white;
+  background-color: #333;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+
+
+.left-label {
+    float: left;
+    margin-right: 10px;
+}
+
+.right-label {
+    float: right;
+}
+
+.place-under {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  user-select: none;
+  text-align: center;
+}
+
+.batch-add:hover {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.item-add:hover {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.nothing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+.bignothing {
+  background: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  color: white;
+  font-weight: bolder;
+}
+
+.middlebignothing {
+  color: white;
+  opacity: 100%;
+  z-index: 100;
+  flex: 1;
+  font-size: 200%;
+}
